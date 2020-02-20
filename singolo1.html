@@ -7,7 +7,7 @@
   <title>Singolo</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
     integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="singolo1.css">
 </head>
 
@@ -15,9 +15,9 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__main">
-        <p class="logo">
+        <h1 class="logo">
           Singolo<span class="colored-text">*</span>
-        </p>
+        </h1>
         <nav class="header__navigation">
           <ul class="navigation">
             <li>
@@ -44,15 +44,15 @@
   <section class="slider">
     <div class="wrapper">
       <div class="slider__main">
-        <img class="control_prev" src="./assets/left_arrow_red.png">
-        <img class="image_first" src="./assets/images/iPhone Vertical.png">
-        <img class="image_second" src="./assets/images/iPhone Horizontal.png">
-        <img class="control_next" src="./assets/right_arrow_red.png">
+        <img class="control_prev" src="./assets/icons/left_arrow_red.png" alt="previous icon">
+        <img class="image_first" src="./assets/images/iPhone Vertical.png" alt="iPhone Vertical">
+        <img class="image_second" src="./assets/images/iPhone Horizontal.png" alt="iPhone Horizontal">
+        <img class="control_next" src="./assets/icons/right_arrow_red.png" alt="next icon">
         <a href="#" class="control_prev_active">
-          <img src="./assets/left_arrow_black.png">
+          <img src="./assets/icons/left_arrow_black.png" alt="previous active icon">
         </a>
         <a href="#" class="control_next_active">
-          <img src="./assets/right_arrow_black.png">
+          <img src="./assets/icons/right_arrow_black.png" alt="next atcive icon">
         </a>
       </div>
       <div class="slider__line"></div>
@@ -60,18 +60,90 @@
   </section>
   <section class="services">
     <div class="wrapper">
-      <h1>Our Services</h1>
-      <p>Fusce dapibus, tellus as cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
-        porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-        condimentum nibh.</p>
-      <div class="layout-3-column">
-        <div class="service">
-          <div class="service-icon">
-
+      <div class="services__main">
+        <h2 class="services_main_header">Our Services</h2>
+        <p class="services_main_description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+          mollis, non commodo luctus, nisi
+          erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh.</p>
+        <div class="layout-3-column">
+          <div class="cell">
+            <div class="service">
+              <div class="service-icon">
+                <img src="./assets/icons/Pen.png" alt="pen">
+              </div>
+              <div class="service-text">
+                <h4>Custom Design</h4>
+                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices
+                  velit.
+                </p>
+              </div>
+            </div>
           </div>
-          <h4>Custom Design</h4>
-          <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-          </p>
+          <div class="cell">
+            <div class="service">
+              <div class="service-icon">
+                <img src="./assets/icons/Bulb.png" alt="bulb">
+              </div>
+              <div class="service-text">
+                <h4>Inovative Ideas</h4>
+                <p>Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec rutrum tellus dolor id
+                  lorem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="service">
+              <div class="service-icon">
+                <img src="./assets/icons/Heart.png" alt="heart">
+              </div>
+              <div class="service-text">
+                <h4>Love Is The Answer</h4>
+                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+                  condimentum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="service">
+              <div class="service-icon">
+                <img src="./assets/icons/Phone.png" alt="phone">
+              </div>
+              <div class="service-text">
+                <h4>Responsive Layout</h4>
+                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae- sent elit
+                  leo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="service">
+              <div class="service-icon">
+                <img src="./assets/icons/Bubble.png" alt="bubble">
+              </div>
+              <div class="service-text">
+                <h4>24 / 7 Support</h4>
+                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen- tesque
+                  egestas venenatis lorem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="service">
+              <div class="service-icon">
+                <img src="./assets/icons/Star.png" alt="star">
+              </div>
+              <div class="service-text">
+                <h4>Feel Like A Star</h4>
+                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="services__line"></div>
