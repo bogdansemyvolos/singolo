@@ -70,6 +70,10 @@ ul.navigation {
   cursor: pointer;
 }
 
+.slider_heading {
+  display: none;
+}
+
 .slider__main {
   position: relative;
   align-items: center;
