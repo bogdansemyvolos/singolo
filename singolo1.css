@@ -63,7 +63,6 @@ ul.navigation {
 
 .colored-text, .navigation li a:hover {
   color: #f06c64 !important;
-
 }
 
 .navigation li a:hover {
@@ -158,7 +157,6 @@ img.control_prev:hover, img.control_next:hover {
   text-align: justify;
   overflow: hidden;
   color: #767e9e;
-  width: 940px;
   height: 57px;
   font-size: 1.8em;
   line-height: 30px;
@@ -166,6 +164,7 @@ img.control_prev:hover, img.control_next:hover {
   margin-left: 40px;
   margin-top: 27px;
   margin-bottom: 49px;
+  margin-right: 40px;
 }
 
 .layout-3-column {
