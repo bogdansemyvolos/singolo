@@ -1,0 +1,207 @@
+body {
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.portfolio__main {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 864px;
+  background-color: #2D303A;
+}
+
+.portfolio__line {
+  width: 100%;
+  min-height: 6px;
+  background-color: #323746;
+}
+
+.portfolio_main_heading {
+  color: #666d89;
+  font-size: 3em;
+  font-weight: 900;
+  padding-top: 63px;
+  padding-left: 40px;
+  letter-spacing: -0.2px;
+}
+
+.portfolio_main_description {
+  text-align: justify;
+  color: #767e9e;
+  font-size: 1.8em;
+  font-weight: 300;
+  padding-left: 40px;
+  padding-top: 27px;
+  padding-bottom: 17px;
+}
+
+ul.navigation {
+  display: flex;
+  padding-left: 40px;
+}
+
+.navigation li {
+  font-size: 1.15em;
+  line-height: 20px;
+  color: #767e9e;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  margin-right: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  letter-spacing: 0.14px;
+}
+
+.navigation li:nth-child(3), .navigation li:nth-child(4) {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.navigation li:hover {
+  cursor: pointer;
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.portfolio__pictures {
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 19px;
+  max-height: 615px;
+  overflow: hidden;
+}
+
+.layout-4-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-4-column .cell {
+  width: 25%;
+  padding-bottom: 19px;
+}
+
+figure {
+  width: 220px;
+  height: 188px;
+}
+
+.about_us__main {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 728px;
+  background-color: #f2f2f2;
+}
+
+.about_us__line {
+  width: 100%;
+  min-height: 7px;
+  background-color: #ffffff;
+}
+
+.about_us_main_heading {
+  color: #666d89;
+  font-size: 3em;
+  font-weight: 900;
+  padding-top: 62px;
+  padding-left: 40px;
+  letter-spacing: -0.2px;
+}
+
+.about_us_main_description {
+  text-align: justify;
+  color: #767e9e;
+  font-size: 1.8em;
+  font-weight: 300;
+  padding-left: 40px;
+  padding-top: 21px;
+  padding-right: 40px;
+  padding-bottom: 17px;
+  line-height: 30px;
+}
+
+.profiles {
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 28px;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.layout-3-column .cell {
+  width: 33%;
+}
+
+.layout-3-column .cell:nth-child(2) {
+  margin-left: -1px;
+}
+
+.layout-3-column .cell:nth-child(3) {
+  margin-left: 1px;
+}
+
+.profile {
+  padding-right: 19px;
+}
+
+.profile-photo {
+  width: 301px;
+  height: 301px;
+}
+
+.profile-text h4{
+  font-size: 1.85em;
+  line-height: 16px;
+  color: #666d89;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  padding-top: 16.5px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.profile-text p{
+  font-size: 1.2em;
+  line-height: 21px;
+  color: #767e9e;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: justify;
+  padding-top: 11px;
+  letter-spacing: 0.02px;
+}
+
+.profile-text {
+  margin-left: -1px;
+}
+
+.social {
+  padding-top: 23px;
+}
+
+.social img {
+  padding-right: 4px;
+}
+
+.social img:hover {
+  cursor: pointer;
+}
