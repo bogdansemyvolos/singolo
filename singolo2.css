@@ -1,6 +1,6 @@
 body {
   font-size: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -151,11 +151,11 @@ figure {
   width: 33%;
 }
 
-.layout-3-column .cell:nth-child(2) {
+.layout-3-column .cell:nth-child(2), .layout-3-column .cell:nth-child(3) .social, .profile-text {
   margin-left: -1px;
 }
 
-.layout-3-column .cell:nth-child(3) {
+.layout-3-column .cell:nth-child(3), .layout-3-column .cell:nth-child(2) .profile-text {
   margin-left: 1px;
 }
 
@@ -190,18 +190,16 @@ figure {
   letter-spacing: 0.02px;
 }
 
-.profile-text {
-  margin-left: -1px;
-}
-
 .social {
-  padding-top: 23px;
+  margin-top: 23px;
 }
 
 .social img {
-  padding-right: 4px;
+  margin-right: 4.2px;
+  border-radius: 50%;
 }
 
 .social img:hover {
   cursor: pointer;
+  background-color: #c1c6dc;
 }

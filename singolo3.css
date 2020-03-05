@@ -1,0 +1,191 @@
+body {
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.get_a_quote__main {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 648px;
+  background-color: #f06c64;
+}
+
+.get_a_quote__line {
+  width: 100%;
+  min-height: 5px;
+  background-color: #ea676b;
+}
+
+.get_a_quote__main__heading {
+  color: #f0d8d9;
+  font-size: 3em;
+  font-weight: 900;
+  padding-top: 61px;
+  padding-left: 40px;
+  letter-spacing: -0.2px;
+}
+
+.get_a_quote__main__description {
+  text-align: justify;
+  color: #f0d8d9;
+  font-size: 1.8em;
+  font-weight: 300;
+  padding-left: 40px;
+  padding-top: 21px;
+  padding-right: 40px;
+  padding-bottom: 18px;
+  line-height: 30px;
+}
+
+.get_a_quote__main__fields {
+  padding: 26px 0 0 0;
+}
+
+.layout-2-column {
+  display: flex;
+  justify-content: left;
+}
+
+.layout-2-column .cell:nth-child(1) {
+  width: calc(64.6% - 40px);
+  margin-left: 40px;
+  overflow: unset;
+}
+
+.layout-2-column .cell:nth-child(2) {
+  width: calc(35.4%);
+}
+
+.layout-2-column input, .layout-2-column textarea {
+  font-family: "Lato", sans-serif;
+  display: block;
+  color: #f0d8d9;
+  font-weight: 400;
+  font-size: 12px;
+  width: calc(100% - 14.5px);
+  border: 0;
+  margin: 0 0 15.5px 0;
+  padding: 0 0 0 14.5px;
+  border-radius: 5px;
+  background-color: #d6564f;
+  line-height: 38px;
+}
+
+.layout-2-column textarea {
+  resize: none;
+  min-height: 192px;
+  line-height: 15px;
+  padding-top: 11px;
+}
+
+.layout-2-column input::placeholder, .layout-2-column textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  color: #f48c8f;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.get_a_quote__main__fields button[name="submit"] {
+  float: right;
+  background-color: #d6564f;
+  color: #f48c8f;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.get_a_quote__main__contact {
+  padding: 0 0 0 21px;
+}
+
+.get_a_quote__main__contact h4{
+  font-size: 1.8em;
+  color: #f0d8d9;
+  font-weight: 900;
+  height: 16px;
+  overflow: hidden;
+  padding-bottom: 12px;
+  letter-spacing: -0.1px;
+}
+
+.get_a_quote__main__contact p{
+  font-size: 1.2em;
+  color: #f0d8d9;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: justify;
+  padding: 0 38.5px 0 0;
+  line-height: 22px;
+}
+
+.get_a_quote__main__contact__links {
+  font-size: 1.2em;
+  color: #f0d8d9;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 20px 0 0 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.footer__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 77px;
+  background-color: #2d303a;
+  color: #666d89;
+}
+
+.footer__main__copyright {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-left: 42px;
+  letter-spacing: -0.2px;
+  margin-bottom: 2px;
+}
+
+.social {
+  margin-right: 34px;
+}
+
+.social img {
+  margin-right: 4.3px;
+  border-radius: 50%;
+}
+
+.social img:hover {
+  cursor: pointer;
+  background-color: #c1c6dc;
+}
+
+.get_a_quote__main__contact__links__icon {
+  width: 14px;
+  text-align: center;
+}
+
+.get_a_quote__main__contact__links a {
+  padding-left: 9px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #c1c6dc;
+}
