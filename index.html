@@ -12,53 +12,77 @@
 
 <body>
   <header class="header">
+    <span id="header"></span>
     <div class="wrapper">
-      <div class="header__main">
-        <h1 class="logo">
-          Singolo<span class="colored-text">*</span>
-        </h1>
-        <nav class="header__navigation">
-          <ul class="navigation">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="fixed_header">
+        <div class="header__main">
+          <h1 class="logo">
+            Singolo<span class="colored-text">*</span>
+          </h1>
+          <nav id="header_nav" class="header__navigation">
+            <ul class="navigation">
+              <li>
+                <a href="#header" class="colored-text">Home</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about_us">About</a>
+              </li>
+              <li>
+                <a href="#get_a_quote">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__line"></div>
       </div>
-      <div class="header__line"></div>
     </div>
   </header>
   <section class="slider">
     <div class="wrapper">
       <h2 class="slider_heading">Slider</h2>
       <div class="slider__main">
+        <div class="first_slide">
+          <img class="image_first" src="./assets/images/slides/iPhone_Vertical.png" alt="iPhone Vertical">
+          <img class="image_second" src="./assets/images/slides/iPhone_Horizontal.png" alt="iPhone Horizontal">
+          <img id="image_first_black_screen" class="hidden" src="./assets/images/slides/slide1_black_screen.png"
+            alt="black screen">
+          <img id="image_second_black_screen" class="hidden" src="./assets/images/slides/slide1_black_screen.png"
+            alt="black screen">
+          <div class="first_image_clicker" onclick="hideShowElementById('image_first_black_screen')"></div>
+          <div class="second_image_clicker" onclick="hideShowElementById('image_second_black_screen')"></div>
+        </div>
+        <div class="second_slide hidden">
+          <img class="image_first" src="./assets/images/slides/small_iPhone.png" alt="small iPhone">
+          <img class="image_second" src="./assets/images/slides/big_iPhone.png" alt="big iPhone">
+          <img class="image_third" src="./assets/images/slides/small_iPhone.png" alt="small iPhone">
+          <img id="image_second_black_screen_slide_2" class="hidden"
+            src="./assets/images/slides/slide2_black_screen.png" alt="black screen">
+          <div class="second_image_clicker" onclick="hideShowElementById('image_second_black_screen_slide_2')"></div>
+        </div>
         <img class="control_prev" src="./assets/icons/left_arrow_red.png" alt="previous icon">
-        <img class="image_first" src="./assets/images/iPhone_Vertical.png" alt="iPhone Vertical">
-        <img class="image_second" src="./assets/images/iPhone_Horizontal.png" alt="iPhone Horizontal">
         <img class="control_next" src="./assets/icons/right_arrow_red.png" alt="next icon">
-        <a href="#" class="control_prev_active">
+        <a onclick="minusSlide()" class="control_prev_active">
           <img src="./assets/icons/left_arrow_black.png" alt="previous active icon">
         </a>
-        <a href="#" class="control_next_active">
-          <img src="./assets/icons/right_arrow_black.png" alt="next atcive icon">
+        <a onclick="plusSlide()" class="control_next_active">
+          <img src="./assets/icons/right_arrow_black.png" alt="next active icon">
         </a>
+        <div class="slider-dots">
+          <span class="slider-dots_item active_dot" onclick="currentSlide(1)"></span>
+          <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        </div>
       </div>
       <div class="slider__line"></div>
     </div>
   </section>
   <section class="services">
+    <span id="services"></span>
     <div class="wrapper">
       <div class="services__main">
         <h2 class="services_main_header">Our Services</h2>
@@ -150,7 +174,8 @@
     </div>
   </section>
 
-  <section>
+  <section class="portfolio">
+    <span id="portfolio"></span>
     <div class="wrapper">
       <div class="portfolio__main">
         <h2 class="portfolio_main_heading">Portfolio</h2>
@@ -158,17 +183,17 @@
           lacinia odio sem nec elit.</p>
         <nav class="portfolio__navigation">
           <ul class="navigation">
-            <li>
-              <a href="#">All</a>
+            <li class="active_tab">
+              <a>All</a>
             </li>
             <li>
-              <a href="#">Web Design</a>
+              <a>Web Design</a>
             </li>
             <li>
-              <a href="#">Graphic Design</a>
+              <a>Graphic Design</a>
             </li>
             <li>
-              <a href="#">Artwork</a>
+              <a>Artwork</a>
             </li>
           </ul>
         </nav>
@@ -240,7 +265,8 @@
       <div class="portfolio__line"></div>
     </div>
   </section>
-  <section>
+  <section class="about_us">
+    <span id="about_us"></span>
     <div class="wrapper">
       <div class="about_us__main">
         <h2 class="about_us_main_heading">About Us</h2>
@@ -314,7 +340,8 @@
     <div class="about_us__line"></div>
   </section>
 
-  <section>
+  <section class="get_a_quote">
+    <span id="get_a_quote"></span>
     <div class="wrapper">
       <div class="get_a_quote__main">
         <h2 class="get_a_quote__main__heading">Get a Quote</h2>
@@ -324,14 +351,14 @@
         <div class="get_a_quote__main__fields">
           <div class="layout-2-column">
             <div class="cell">
-              <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+              <form id="contact_form" action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
                 <fieldset>
-                  <input type="text" name="username" placeholder="Name (Required)" required>
-                  <input type="email" name="email" placeholder="Email (Required)" required>
-                  <input type="text" name="subject" placeholder="Subject">
-                  <textarea name="comment" placeholder="Describe your project in detail..."></textarea>
+                  <input id="username" type="text" name="username" placeholder="Name (Required)" required>
+                  <input id="email" type="email" name="email" placeholder="Email (Required)" required>
+                  <input id="subject" type="text" name="subject" placeholder="Subject" maxlength="100">
+                  <textarea id="comment" name="comment" placeholder="Describe your project in detail..." maxlength="300"></textarea>
                 </fieldset>
-                <button name="submit">
+                <button name="submit" id="submit">
                   Submit
                 </button>
               </form>
@@ -385,6 +412,18 @@
       </div>
     </div>
   </footer>
+  <div id="message-block" class="hidden">
+    <div id="message">
+      <div class="message_content">
+      <p class="message_header"><b>The letter was sent</b></p>
+        <p><span id="message-subject"></span></p>
+        <p><span id="message-description"></span></p>
+      </div>
+      <br>
+      <button id="close-btn">OK</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
