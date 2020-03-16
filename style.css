@@ -772,6 +772,8 @@ button:hover {
   font-size: 1.5em;
   color: #303340;
   font-weight: 400;
+  max-width: 50vw;
+  word-break: break-all;
 }
 
 #message .message_content {
