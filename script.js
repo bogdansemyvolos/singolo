@@ -34,17 +34,17 @@ SUBMIT_BUTTON.addEventListener('click', () => {
   const emailInput = document.getElementById('email');
   const userNameInput = document.getElementById('username');
   if (emailInput.matches(':valid') && userNameInput.matches(':valid')) {
-  const subject = document.getElementById('subject').value.toString();
-  const comment = document.getElementById('comment').value.toString();
+  const subject = document.getElementById('subject').value.toString().trim();
+  const comment = document.getElementById('comment').value.toString().trim();
   if (subject != '') {
-    document.getElementById('message-subject').innerHTML = 'Тема: '.bold() + subject;
+    document.getElementById('message-subject').innerHTML = 'Subject: '.bold() + subject;
   } else {
-    document.getElementById('message-subject').innerHTML = 'Без темы';
+    document.getElementById('message-subject').innerHTML = 'Without subject';
   }
   if (comment != '') {
-    document.getElementById('message-description').innerHTML = 'Описание: '.bold() + comment.split('\n').join('<br>');
+    document.getElementById('message-description').innerHTML = 'Description: '.bold() + comment.split('\n').join('<br>');
   } else {
-    document.getElementById('message-description').innerHTML = 'Без описания';
+    document.getElementById('message-description').innerHTML = 'Without description';
   }
   hideShowElementById('message-block');
   }

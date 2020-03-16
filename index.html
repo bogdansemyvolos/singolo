@@ -355,8 +355,8 @@
                 <fieldset>
                   <input id="username" type="text" name="username" placeholder="Name (Required)" required>
                   <input id="email" type="email" name="email" placeholder="Email (Required)" required>
-                  <input id="subject" type="text" name="subject" placeholder="Subject">
-                  <textarea id="comment" name="comment" placeholder="Describe your project in detail..."></textarea>
+                  <input id="subject" type="text" name="subject" placeholder="Subject" maxlength="100">
+                  <textarea id="comment" name="comment" placeholder="Describe your project in detail..." maxlength="300"></textarea>
                 </fieldset>
                 <button name="submit" id="submit">
                   Submit
@@ -415,7 +415,7 @@
   <div id="message-block" class="hidden">
     <div id="message">
       <div class="message_content">
-      <p class="message_header"><b>Письмо отправлено</b></p>
+      <p class="message_header"><b>The letter was sent</b></p>
         <p><span id="message-subject"></span></p>
         <p><span id="message-description"></span></p>
       </div>
