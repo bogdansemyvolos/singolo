@@ -189,31 +189,31 @@ img.control_prev:hover, img.control_next:hover {
 
 .first_slide .first_image_clicker {
   z-index: 2;
-  height: 458px;
-  width: 217px;
-  top: 53px;
-  left: 111px;
-  border-radius: 27px;
+  height: 42px;
+  width: 42px;
+  top: 461px;
+  left: 198px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .first_slide .second_image_clicker {
   z-index: 2;
-  height: 217px;
-  width: 458px;
-  top: 173px;
-  right: 137px;
-  border-radius: 27px;
+  height: 42px;
+  width: 42px;
+  top: 260px;
+  right: 544.75px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .second_slide .second_image_clicker {
   z-index: 5;
-  height: 487.45px;
-  width: 229.42px;
-  top: 43px;
-  right: 408px;
-  border-radius: 27px;
+  height: 44.5px;
+  width: 44.5px;
+  top: 476px;
+  right: 500px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
