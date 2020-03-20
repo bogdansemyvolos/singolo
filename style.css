@@ -4,6 +4,10 @@ body {
   padding-top: 95px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:link, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: inherit;
@@ -21,11 +25,11 @@ a:link, a:visited, a:hover, a:active {
   z-index: 999;
 }
 
-.header, .services, .portfolio, .about_us, .get_a_quote {
+.slider, .services, .portfolio, .about_us, .get_a_quote {
   position:relative;
 }
 
-.header>span, .services>span, .portfolio>span, .about_us>span, .get_a_quote>span {
+.slider>span, .services>span, .portfolio>span, .about_us>span, .get_a_quote>span {
   position:absolute;
   top:-95px;
 }
