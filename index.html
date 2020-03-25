@@ -47,35 +47,37 @@
     <div class="wrapper">
       <h2 class="slider_heading">Slider</h2>
       <div class="slider__main">
-        <div class="first_slide">
-          <img class="image_first" src="./assets/images/slides/iPhone_Vertical.png" alt="iPhone Vertical">
-          <img class="image_second" src="./assets/images/slides/iPhone_Horizontal.png" alt="iPhone Horizontal">
-          <img id="image_first_black_screen" class="hidden" src="./assets/images/slides/slide1_black_screen.png"
-            alt="black screen">
-          <img id="image_second_black_screen" class="hidden" src="./assets/images/slides/slide1_black_screen.png"
-            alt="black screen">
-          <div class="first_image_clicker" onclick="hideShowElementById('image_first_black_screen')"></div>
-          <div class="second_image_clicker" onclick="hideShowElementById('image_second_black_screen')"></div>
-        </div>
-        <div class="second_slide hidden">
-          <img class="image_first" src="./assets/images/slides/small_iPhone.png" alt="small iPhone">
-          <img class="image_second" src="./assets/images/slides/big_iPhone.png" alt="big iPhone">
-          <img class="image_third" src="./assets/images/slides/small_iPhone.png" alt="small iPhone">
-          <img id="image_second_black_screen_slide_2" class="hidden"
-            src="./assets/images/slides/slide2_black_screen.png" alt="black screen">
-          <div class="second_image_clicker" onclick="hideShowElementById('image_second_black_screen_slide_2')"></div>
+        <div class="slider__wrapper">
+          <div class="first_slide">
+            <img class="image_first" src="./assets/images/slides/iPhone_Vertical.png" alt="iPhone Vertical">
+            <img class="image_second" src="./assets/images/slides/iPhone_Horizontal.png" alt="iPhone Horizontal">
+            <img id="image_first_black_screen" class="hidden" src="./assets/images/slides/slide1_black_screen.png"
+              alt="black screen">
+            <img id="image_second_black_screen" class="hidden" src="./assets/images/slides/slide1_black_screen.png"
+              alt="black screen">
+            <div class="first_image_clicker" onclick="hideShowElementById('image_first_black_screen')"></div>
+            <div class="second_image_clicker" onclick="hideShowElementById('image_second_black_screen')"></div>
+          </div>
+          <div class="second_slide">
+            <img class="image_first" src="./assets/images/slides/small_iPhone.png" alt="small iPhone">
+            <img class="image_second" src="./assets/images/slides/big_iPhone.png" alt="big iPhone">
+            <img class="image_third" src="./assets/images/slides/small_iPhone.png" alt="small iPhone">
+            <img id="image_second_black_screen_slide_2" class="hidden"
+              src="./assets/images/slides/slide2_black_screen.png" alt="black screen">
+            <div class="second_image_clicker" onclick="hideShowElementById('image_second_black_screen_slide_2')"></div>
+          </div>
         </div>
         <img class="control_prev" src="./assets/icons/left_arrow_red.png" alt="previous icon">
         <img class="control_next" src="./assets/icons/right_arrow_red.png" alt="next icon">
-        <a onclick="minusSlide()" class="control_prev_active">
+        <a class="control_prev_active">
           <img src="./assets/icons/left_arrow_black.png" alt="previous active icon">
         </a>
-        <a onclick="plusSlide()" class="control_next_active">
+        <a class="control_next_active">
           <img src="./assets/icons/right_arrow_black.png" alt="next active icon">
         </a>
         <div class="slider-dots">
-          <span class="slider-dots_item active_dot" onclick="currentSlide(1)"></span>
-          <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+          <span class="slider-dots_item active_dot"></span>
+          <span class="slider-dots_item"></span>
         </div>
       </div>
       <div class="slider__line"></div>
@@ -356,7 +358,8 @@
                   <input id="username" type="text" name="username" placeholder="Name (Required)" required>
                   <input id="email" type="email" name="email" placeholder="Email (Required)" required>
                   <input id="subject" type="text" name="subject" placeholder="Subject" maxlength="200">
-                  <textarea id="comment" name="comment" placeholder="Describe your project in detail..." maxlength="600"></textarea>
+                  <textarea id="comment" name="comment" placeholder="Describe your project in detail..."
+                    maxlength="600"></textarea>
                 </fieldset>
                 <button name="submit" id="submit">
                   Submit
@@ -415,7 +418,7 @@
   <div id="message-block" class="hidden">
     <div id="message">
       <div class="message_content">
-      <p class="message_header"><b>The letter was sent</b></p>
+        <p class="message_header"><b>The letter was sent</b></p>
         <p><span id="message-subject"></span></p>
         <p><span id="message-description"></span></p>
       </div>
